@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import star from "../../assets/img/star.svg";
+import star from "../../assets/img/totalRatingStar.svg";
 import prod1 from "../../assets/img/prod1.png";
 import prod2 from "../../assets/img/prod2.png";
 import prod3 from "../../assets/img/prod3.png";
@@ -59,7 +59,7 @@ export default class Product extends Component {
             return (
               <div
                 key={index}
-                className="w-[32%] flex flex-col items-center justify-center ">
+                className="w-[32%] flex flex-col items-center justify-center gap-4">
                 <div className="relative w-full">
                   <img alt="" src={prod.img} className="w-full" />
                   <div className="absolute flex items-center gap-1 justify-center bottom-[22px] left-[6px]">
@@ -71,25 +71,27 @@ export default class Product extends Component {
                     <img alt="" src={star} />
                   </div>
                 </div>
-                <p className="text-[#595858]">
-                  {prod.name || "Name of the plant"}
-                </p>
-                <p className="flex items-center gap-1 font-semibold text-2xl">
-                  {prod.currentPrice}
-                  <span className="line-through text-[14px] text-[#595858]">
-                    {prod.price}
-                  </span>
-                </p>
-                <p className="italic font-light text-[#F93636] text-[12px]">
-                  Rs. {prod.sale} off
-                </p>
+                <div className="flex flex-col items-center justify-center">
+                  <p className="text-[#595858]">
+                    {prod.name || "Name of the plant"}
+                  </p>
+                  <p className="flex items-center gap-1 font-semibold text-2xl">
+                    {prod.currentPrice}
+                    <span className="line-through text-[14px] text-[#595858]">
+                      {prod.price}
+                    </span>
+                  </p>
+                  <p className="italic font-light text-[#F93636] text-[12px]">
+                    Rs. {prod.sale} off
+                  </p>
+                </div>
               </div>
             );
           } else {
             return (
               <div
                 key={index}
-                className="w-[32%] flex flex-col items-center justify-center mt-20">
+                className="w-[32%] flex flex-col items-center justify-center mt-20 gap-4">
                 <div className="relative w-full">
                   <img alt="" src={prod.img} className="w-full" />
                   <div className="absolute flex items-center gap-1 justify-center bottom-[22px] left-[6px]">
@@ -101,18 +103,20 @@ export default class Product extends Component {
                     <img alt="" src={star} />
                   </div>
                 </div>
-                <p className="text-[#595858]">
-                  {prod.name || "Name of the plant"}
-                </p>
-                <p className="flex items-center gap-1 font-semibold text-2xl">
-                  {prod.currentPrice}
-                  <span className="line-through text-[14px] text-[#595858]">
-                    {prod.price}
-                  </span>
-                </p>
-                <p className="italic font-light text-[#F93636] text-[12px]">
-                  Rs. {prod.sale} off
-                </p>
+                <div className="flex flex-col items-center justify-center">
+                  <p className="text-[#595858]">
+                    {prod.name || "Name of the plant"}
+                  </p>
+                  <p className="flex items-center gap-1 font-semibold text-2xl">
+                    {prod.currentPrice}
+                    <span className="line-through text-[14px] text-[#595858]">
+                      {prod.price}
+                    </span>
+                  </p>
+                  <p className="italic font-light text-[#F93636] text-[12px]">
+                    Rs. {prod.sale} off
+                  </p>
+                </div>
               </div>
             );
           }

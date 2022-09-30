@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { IoIosArrowDown } from "react-icons/io";
 import angleDown from "../../assets/img/angle-down.svg";
-import Logo from "../../assets/img/Logo.png";
+import logo from "../../assets/img/Logo.png";
 import search from "../../assets/img/search.svg";
 import user from "../../assets/img/user-alt.svg";
 import cart from "../../assets/img/shopping-cart.svg";
@@ -10,7 +10,7 @@ export default class Nav extends Component {
     return (
       <div className="flex justify-center bg-gradient-to-b from-[#2E5E2D] to-[#023501]">
         <div className="flex h-[149px] justify-between items-center w-[85%]">
-          <img alt="logo" src={Logo} />
+          <img alt="logo" src={logo} />
           <ul className="flex gap-10 text-3xl font-semibold text-white">
             <li className="cursor-pointer">Home</li>
             <li className="cursor-pointer flex items-center justify-between ">
