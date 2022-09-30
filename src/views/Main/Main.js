@@ -217,14 +217,12 @@ export default class Main extends Component {
                 Stay up to date on the latest news with our carefully curated
                 newsletters.
               </p>
-              <div className="flex h-20">
-                <form>
-                  <input className="w-[810px] rounded-l-[20px] outline-none px-10 h-full" />
-                  <button className="h-full rounded-r-[20px] text-[20px] bg-[#2E5E2D] uppercase px-12 text-white">
-                    Submit
-                  </button>
-                </form>
-              </div>
+              <form className="flex h-20 w-4/5">
+                <input className="w-4/5 rounded-l-[20px] outline-none px-10 h-full" />
+                <button className="h-full rounded-r-[20px] text-[20px] bg-[#2E5E2D] uppercase px-12 text-white">
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
         </section>
