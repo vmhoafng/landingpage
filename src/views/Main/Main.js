@@ -1,20 +1,13 @@
 import React, { Component } from "react";
 import instagram from "../../assets/img/instagram.svg";
-import insImg1 from "../../assets/img/ins1.png";
-import insImg2 from "../../assets/img/ins2.png";
-import insImg3 from "../../assets/img/ins3.png";
-import insImg4 from "../../assets/img/ins4.png";
-import insImg5 from "../../assets/img/ins5.png";
-import insImg6 from "../../assets/img/ins6.png";
 import floatPlant from "../../assets/img/floatPlant.png";
 import floatPlant1 from "../../assets/img/floatPlant1.png";
 import floatPlant2 from "../../assets/img/floatPlant2.png";
-import user from "../../assets/img/user.png";
 // import floatPlant3 from "../../assets/img/floatPlant3.png";
 import shipping from "../../assets/img/Shipping.png";
-import star from "../../assets/img/userRatingStar.svg";
 import Product from "./Product";
-
+import Instagram from "./Instagram";
+import TopReview from "./TopReview";
 export default class Main extends Component {
   render() {
     return (
@@ -119,69 +112,7 @@ export default class Main extends Component {
           </div>
         </section>
         <section className="mt-6 w-3/4 m-auto">
-          <div className="relative flex items-end justify-end pb-[17rem] gap-10">
-            <img alt="" src={user} className="absolute top-[-125px] left-0" />
-            <div className="w-1/2 h-[507px] bg-[#2E5E2D]"></div>
-            <div className="w-[32%]">
-              <div>
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-              </div>
-              <p className="text-xl mt-5">
-                <span>"</span>I used to spend hours writing creative copy, but
-                now all I do is tell Rytr what I need and it writes everything
-                for me. It's the ultimate AI content writer, and a must-have
-                tool for bloggers, marketers, & entrepreneurs.<span>"</span>
-              </p>
-              <p className="font-bold text-3xl mt-5">John Paul</p>
-              <p className="uppercase text-xl mt-4">Founder, plant kingdom</p>
-            </div>
-          </div>
-          <div className="relative flex items-end justify-end flex-row-reverse pb-[17rem] gap-10">
-            <img alt="" src={user} className="absolute top-[-125px] right-0" />
-            <div className="w-1/2 h-[507px] bg-[#2E5E2D]"></div>
-            <div className="w-[32%]">
-              <div>
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-              </div>
-              <p className="text-xl mt-5">
-                <span>"</span>I used to spend hours writing creative copy, but
-                now all I do is tell Rytr what I need and it writes everything
-                for me. It's the ultimate AI content writer, and a must-have
-                tool for bloggers, marketers, & entrepreneurs.<span>"</span>
-              </p>
-              <p className="font-bold text-3xl mt-5">John Paul</p>
-              <p className="uppercase text-xl mt-4">Founder, plant kingdom</p>
-            </div>
-          </div>
-          <div className="relative flex items-end justify-end pb-[14rem] gap-10">
-            <img alt="" src={user} className="absolute top-[-125px] left-0" />
-            <div className="w-1/2 h-[507px] bg-[#2E5E2D]"></div>
-            <div className="w-[32%]">
-              <div>
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-                <img src={star} alt="" className="inline" />
-              </div>
-              <p className="text-xl mt-5">
-                <span>"</span>I used to spend hours writing creative copy, but
-                now all I do is tell Rytr what I need and it writes everything
-                for me. It's the ultimate AI content writer, and a must-have
-                tool for bloggers, marketers, & entrepreneurs.<span>"</span>
-              </p>
-              <p className="font-bold text-3xl mt-5">John Paul</p>
-              <p className="uppercase text-xl mt-4">Founder, plant kingdom</p>
-            </div>
-          </div>
+          <TopReview />
         </section>
         <section className="flex flex-col justify-center items-center w-3/4 m-auto bg-black gap-[70px]">
           <div className="relative mt-20">
@@ -198,14 +129,7 @@ export default class Main extends Component {
           <button className="bg-gradient-to-b from-[#5EEE6D] to-[#2E5E2D] text-white text-[25px] py-[13.75px] px-6 rounded-full">
             @plantgallery
           </button>
-          <div className="flex flex-wrap items-center justify-between">
-            <img alt="" src={insImg1} className="w-[32%] " />
-            <img alt="" src={insImg2} className="w-[32%] " />
-            <img alt="" src={insImg3} className="w-[32%] " />
-            <img alt="" src={insImg4} className="w-[32%] mt-7" />
-            <img alt="" src={insImg5} className="w-[32%] mt-7" />
-            <img alt="" src={insImg6} className="w-[32%] mt-7" />
-          </div>
+          <Instagram />
         </section>
         <section className="mt-28">
           <div className="bg-bg-pattern-2 h-[458px] bg-cover bg-no-repeat flex items-center justify-center">
