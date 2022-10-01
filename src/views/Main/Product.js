@@ -59,7 +59,7 @@ export default class Product extends Component {
             return (
               <div
                 key={index}
-                className="w-[48%] md:w-[32%] flex flex-col items-center justify-center gap-4">
+                className="w-10/12 md:w-[32%] flex flex-col items-center justify-center gap-4">
                 <div className="relative w-full">
                   <img alt="" src={prod.img} className="w-full" />
                   <div className="absolute flex items-center gap-1 justify-center bottom-[22px] left-[6px]">
@@ -91,7 +91,7 @@ export default class Product extends Component {
             return (
               <div
                 key={index}
-                className="w-[48%] md:w-[32%] flex flex-col items-center justify-center mt-20 gap-4">
+                className="w-10/12 md:w-[32%] flex flex-col items-center justify-center mt-20 gap-4">
                 <div className="relative w-full">
                   <img alt="" src={prod.img} className="w-full" />
                   <div className="absolute flex items-center gap-1 justify-center bottom-[22px] left-[6px]">

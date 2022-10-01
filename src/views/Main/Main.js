@@ -13,8 +13,8 @@ export default class Main extends Component {
     return (
       <div>
         <section className="flex items-center justify-center bg-gradient-to-b from-[#ECECEC] via-[#ECECEC] to-[#AEAEAE] py-44">
-          <div className="flex items-center justify-start w-3/4">
-            <div className="flex flex-col gap-10 w-3/4 z-20">
+          <div className="flex items-center justify-start w-11/12 lg:w-3/4">
+            <div className="flex flex-col gap-10 w-11/12 lg:w-3/4 z-20">
               <h1 className="font-bold text-[90px] leading-[6rem]">
                 <span className="text-[#096F00] ">One-Stop Shop</span>
                 <br /> For All Your
@@ -39,31 +39,31 @@ export default class Main extends Component {
             <img
               src={floatPlant}
               alt=""
-              className="absolute md:right-52 top-56 blur-sm md:blur-none"
+              className="absolute left-0 md:right-52 top-56 blur-sm md:blur-none"
             />
           </div>
         </section>
         <section className="flex flex-col items-center justify-center relative w-100% overflow-hidden pt-36">
-          <div className="flex items-start justify-center gap-[78px] z-10">
-            <div className="flex flex-col items-center justify-center w-[13%] gap-4 text-center">
-              <img src={shipping} alt="" className="w-[109px] " />
+          <div className="flex flex-col md:flex-row items-center justify-center gap-[78px] z-10">
+            <div className="flex md:flex-col items-center justify-center md:w-[13%] gap-4 text-center">
+              <img src={shipping} alt="" className="w-1/4 " />
               <p className="font-semibold text-2xl">Free Shipping</p>
-              <p className="">Across West and East from handpicked sellers </p>
+              <p className="font-medium">Across West and East from handpicked sellers </p>
             </div>{" "}
-            <div className="flex flex-col items-center justify-center w-[13%] gap-4 text-center">
-              <img src={shipping} alt="" className="w-[109px] " />
+            <div className="flex md:flex-col items-center justify-center md:w-[13%] gap-4 text-center">
+              <img src={shipping} alt="" className="w-1/4 " />
               <p className="font-semibold text-2xl">100% Natural</p>
-              <p className="">Eat Local, Consume local, closure to nature</p>
+              <p className="font-medium">Eat Local, Consume local, closure to nature</p>
             </div>{" "}
-            <div className="flex flex-col items-center justify-center w-[13%] gap-4 text-center">
-              <img src={shipping} alt="" className="w-[109px] " />
+            <div className="flex md:flex-col items-center justify-center md:w-[13%] gap-4 text-center">
+              <img src={shipping} alt="" className="w-1/4 " />
               <p className="font-semibold text-2xl">Handmade</p>
-              <p className="">Made with passion by 300+ curators across</p>
+              <p className="font-medium">Made with passion by 300+ curators across</p>
             </div>
-            <div className="flex flex-col items-center justify-center w-[13%] gap-4 text-center">
-              <img src={shipping} alt="" className="w-[109px] " />
+            <div className="flex md:flex-col items-center justify-center md:w-[13%] gap-4 text-center">
+              <img src={shipping} alt="" className="w-1/4 " />
               <p className="font-semibold text-2xl">Curated Products</p>
-              <p className="">Made with passion by 300+ curators across</p>
+              <p className="font-medium">Made with passion by 300+ curators across</p>
             </div>{" "}
           </div>
           <img
@@ -72,21 +72,21 @@ export default class Main extends Component {
             className="absolute right-[-10rem] top-0 blur-sm md:blur-none"
           />
           <div className="flex flex-col items-center justify-center mt-56">
-            <h2 className="font-bold text-6xl capitalize z-10">
+            <h2 className="font-bold text-6xl text-center capitalize z-10">
               our <span className="text-[#2E5E2D]">best seller</span>
             </h2>
             <div className="flex items-center justify-center gap-[29px] my-20 z-10">
-              <button className="border-[#5EEE6D] filter-active px-[52px] py-[23px] text-3xl rounded-full uppercase">
+              <button className="border-[#5EEE6D] filter-active lg:px-[52px] lg:py-[23px] lg:text-3xl rounded-full uppercase">
                 New arrivals
               </button>{" "}
-              <button className="border-2 border-[#5EEE6D] px-[52px] py-[23px] text-3xl rounded-full uppercase">
+              <button className="border-2 border-[#5EEE6D] lg:px-[52px] lg:py-[23px] lg:text-3xl rounded-full uppercase">
                 best seller
               </button>{" "}
-              <button className="border-2 border-[#5EEE6D] px-[52px] py-[23px] text-3xl rounded-full uppercase">
+              <button className="border-2 border-[#5EEE6D] lg:px-[52px] lg:py-[23px] lg:text-3xl rounded-full uppercase">
                 top rated
               </button>
             </div>
-            <div className="flex items-center justify-center flex-wrap w-3/4 gap-[14px] rounded-[20px]">
+            <div className="flex items-center justify-center flex-wrap w-11/12 lg:w-3/4 gap-[14px] rounded-[20px]">
               <Product />
             </div>
           </div>
@@ -99,7 +99,7 @@ export default class Main extends Component {
           />
           <div className="w-full">
             <div className="flex flex-col gap-10 items-center justify-center bg-bg-pattern z-20 bg-no-repeat w-full bg-cover h-[809px]">
-              <h2 className="font-bold text-6xl text-white z-20 opacity-80">
+              <h2 className="text-center font-bold text-6xl text-white z-20 opacity-80">
                 Everyone loves a green gift
               </h2>
               <button className="uppercase text-[25px] px-[72px] py-4 bg-[#2E5E2D] rounded-full z-20">
@@ -111,18 +111,18 @@ export default class Main extends Component {
             <div className="bg-[#2E5E2D] w-full h-[809px] absolute top-0 opacity-50"></div>
           </div>
         </section>
-        <section className="mt-6 w-3/4 m-auto">
+        <section className="mt-6 w-11/12 lg:w-3/4 m-auto">
           <TopReview />
         </section>
-        <section className="flex flex-col justify-center items-center w-3/4 m-auto bg-black gap-[70px]">
+        <section className="flex flex-col justify-center items-center w-11/12 lg:w-3/4 m-auto bg-black gap-[70px]">
           <div className="relative mt-20">
-            <div className="absolute bg-[#DEE1DD] p-3 rounded-[100%] left-16">
+            <div className="absolute bg-[#DEE1DD] p-3 rounded-[100%] left-1/2 -translate-x-1/2 -translate-y-full  lg:left-16 ">
               <img alt="" src={instagram} className="" />
             </div>
-            <h2 className="text-6xl text-white font-bold mb-10 text-center">
+            <h2 className="text-4xl md:text-6xl text-white font-bold mb-10 text-center">
               #plantgallery
             </h2>
-            <p className="text-[#BABABA] text-[25px]">
+            <p className="text-[#BABABA] text-[25px] text-center">
               Our community has a thing for plant styling. Get inspired.
             </p>
           </div>
@@ -133,7 +133,7 @@ export default class Main extends Component {
         </section>
         <section className="mt-28">
           <div className="bg-bg-pattern-2 h-[458px] bg-cover bg-no-repeat flex items-center justify-center">
-            <div className="w-3/4 flex flex-col gap-8">
+            <div className="w-11/12 lg:w-3/4 flex flex-col gap-8">
               <p className="text-[#2E5E2D] text-[50px]">
                 Sign up to our newsletter
               </p>

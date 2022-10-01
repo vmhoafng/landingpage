@@ -9,9 +9,9 @@ export default class Nav extends Component {
   render() {
     return (
       <div className="flex justify-center bg-gradient-to-b from-[#2E5E2D] to-[#023501]">
-        <div className="flex h-[149px] justify-between items-center w-[85%]">
-          <img alt="logo" src={logo} />
-          <ul className="flex gap-10 text-3xl font-semibold text-white">
+        <div className="flex h-20 lg:h-[149px] justify-between items-center w-[85%]">
+          <img alt="logo" src={logo} className="w-1/2 lg:w-auto" />
+          <ul className="hidden md:flex gap-10 text-3xl font-semibold text-white">
             <li className="cursor-pointer">Home</li>
             <li className="cursor-pointer flex items-center justify-between ">
               Shop
@@ -23,7 +23,7 @@ export default class Nav extends Component {
             </li>
             <li className="cursor-pointer">Blog</li>
           </ul>
-          <ul className="flex gap-6">
+          <ul className="hidden md:flex gap-6">
             <li className="cursor-pointer">
               <img alt="search" src={search} />
             </li>

@@ -28,14 +28,14 @@ export default class Instagram extends Component {
   ];
   render() {
     return (
-      <div className="flex flex-wrap items-center justify-between gap-4">
+      <div className="flex flex-wrap items-center justify-center md:justify-between gap-4">
         {this.InsImg.map((item, index) => {
           return (
             <img
               key={index}
               alt=""
               src={item.img}
-              className="w-[48%] lg:w-[32%] "
+              className="w-10/12 lg:w-[32%] "
             />
           );
         })}

@@ -16,7 +16,7 @@ export default class Footer extends Component {
       <div className="py-14 bg-gradient-to-b from-[#2E5E2D] to-[#013900]">
         <div className="w-[85%] flex flex-col justify-center items-start m-auto gap-[68px]">
           <img alt="logo" src={logo} />
-          <div className="flex items-start justify-between">
+          <div className="lg:flex hidden items-start justify-between">
             <div className="w-1/5">
               <p className="text-[25px] font-medium uppercase text-white mb-14">
                 Company
@@ -110,7 +110,7 @@ export default class Footer extends Component {
               </div>
             </div>
           </div>
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-5">
             <img alt="" src={mastrocard} />
             <img alt="" src={visa} />
             <img alt="" src={Americanxpress} />
@@ -118,8 +118,8 @@ export default class Footer extends Component {
             <img alt="" src={paytm} />
             <img alt="" src={paypal} />
           </div>
-          <hr className="bg-white/40 border-none h-[2px] w-full" />
-          <div className="flex items-center justify-between text-white text-[22px] w-full">
+          <hr className="bg-white/40 border-none h-[2px] w-full hidden md:block" />
+          <div className="flex flex-col lg:flex-row items-center justify-between text-white text-[22px] w-full">
             <p>@2022 Plantgallery</p>
             <div className="flex capitalize gap-5">
               <p>Terms of Use</p>

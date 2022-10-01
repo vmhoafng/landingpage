@@ -26,6 +26,7 @@ export default class TopReview extends Component {
     },
   ];
   rating(userRate) {
+    console.log(userRate);
     for (let i = 0; i < userRate; i++) {
       <img src={star} alt="" className="inline" />;
     }
@@ -41,10 +42,10 @@ export default class TopReview extends Component {
               <img
                 alt=""
                 src={item.img}
-                className="absolute bottom-72 left-0"
+                className="absolute w-[40vw] bottom-72 left-0 lg:left-24"
               />
-              <div className="w-1/2 h-[507px] bg-[#2E5E2D]"></div>
-              <div className="w-[32%]">
+              <div className="w-1/2 h-[30vw] bg-[#2E5E2D]"></div>
+              <div className="w-1/2 md:w-[32%]">
                 <div>{this.rating(item.rate)}</div>
                 <p className="text-xl mt-5">
                   <span>"</span>I used to spend hours writing creative copy, but
@@ -55,7 +56,7 @@ export default class TopReview extends Component {
                 <p className="font-bold text-3xl mt-5">{item.name}</p>
                 <p className="uppercase text-xl mt-4">{item.country}</p>
               </div>
-            </div>
+            </div> 
           ) : (
             <div
               key={index}
@@ -63,10 +64,10 @@ export default class TopReview extends Component {
               <img
                 alt=""
                 src={item.img}
-                className="absolute bottom-72 right-0"
+                className="absolute w-[40vw] bottom-72 right-0 lg:right-24"
               />
-              <div className="w-1/2 h-[507px] bg-[#2E5E2D]"></div>
-              <div className="w-[32%]">
+              <div className="w-1/2 h-[30vw] bg-[#2E5E2D]"></div>
+              <div className="w-1/2 md:w-[32%]">
                 <div>{this.rating(item.rate)}</div>
                 <p className="text-xl mt-5">
                   <span>"</span>I used to spend hours writing creative copy, but
