@@ -39,31 +39,31 @@ export default class Main extends Component {
             <img
               src={floatPlant}
               alt=""
-              className="absolute left-0 md:right-52 top-56 blur-sm md:blur-none"
+              className="absolute left-0 md:left-auto md:right-52 top-56 blur-sm md:blur-none"
             />
           </div>
         </section>
         <section className="flex flex-col items-center justify-center relative w-100% overflow-hidden pt-36">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-[78px] z-10">
+          <div className="flex flex-col md:flex-row items-center bg-white/50 justify-center gap-[78px] z-10">
             <div className="flex md:flex-col items-center justify-center md:w-[13%] gap-4 text-center">
-              <img src={shipping} alt="" className="w-1/4 " />
+              <img src={shipping} alt="" className="w-1/4 md:w-auto" />
               <p className="font-semibold text-2xl">Free Shipping</p>
-              <p className="font-medium">Across West and East from handpicked sellers </p>
+              <p className="font-medium md:font-normal">Across West and East from handpicked sellers </p>
             </div>{" "}
             <div className="flex md:flex-col items-center justify-center md:w-[13%] gap-4 text-center">
-              <img src={shipping} alt="" className="w-1/4 " />
+              <img src={shipping} alt="" className="w-1/4 md:w-auto" />
               <p className="font-semibold text-2xl">100% Natural</p>
-              <p className="font-medium">Eat Local, Consume local, closure to nature</p>
+              <p className="font-medium md:font-normal">Eat Local, Consume local, closure to nature</p>
             </div>{" "}
             <div className="flex md:flex-col items-center justify-center md:w-[13%] gap-4 text-center">
-              <img src={shipping} alt="" className="w-1/4 " />
+              <img src={shipping} alt="" className="w-1/4 md:w-auto" />
               <p className="font-semibold text-2xl">Handmade</p>
-              <p className="font-medium">Made with passion by 300+ curators across</p>
+              <p className="font-medium md:font-normal">Made with passion by 300+ curators across</p>
             </div>
             <div className="flex md:flex-col items-center justify-center md:w-[13%] gap-4 text-center">
-              <img src={shipping} alt="" className="w-1/4 " />
+              <img src={shipping} alt="" className="w-1/4 md:w-auto" />
               <p className="font-semibold text-2xl">Curated Products</p>
-              <p className="font-medium">Made with passion by 300+ curators across</p>
+              <p className="font-medium md:font-normal">Made with passion by 300+ curators across</p>
             </div>{" "}
           </div>
           <img
@@ -98,7 +98,7 @@ export default class Main extends Component {
             className="absolute top-[-17rem] left-[-15rem] z-10 "
           />
           <div className="w-full">
-            <div className="flex flex-col gap-10 items-center justify-center bg-bg-pattern z-20 bg-no-repeat w-full bg-cover h-[809px]">
+            <div className="flex flex-col gap-10 items-center justify-center bg-bg-pattern z-20 bg-no-repeat w-full bg-cover h-[809px] px-4">
               <h2 className="text-center font-bold text-6xl text-white z-20 opacity-80">
                 Everyone loves a green gift
               </h2>
@@ -116,7 +116,7 @@ export default class Main extends Component {
         </section>
         <section className="flex flex-col justify-center items-center w-11/12 lg:w-3/4 m-auto bg-black gap-[70px]">
           <div className="relative mt-20">
-            <div className="absolute bg-[#DEE1DD] p-3 rounded-[100%] left-1/2 -translate-x-1/2 -translate-y-full  lg:left-16 ">
+            <div className="absolute bg-[#DEE1DD] p-3 rounded-[100%] left-1/2 -translate-x-1/2 -translate-y-full lg:transform-none  lg:left-16 ">
               <img alt="" src={instagram} className="" />
             </div>
             <h2 className="text-4xl md:text-6xl text-white font-bold mb-10 text-center">

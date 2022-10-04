@@ -47,12 +47,12 @@ export default class TopReview extends Component {
               <div className="w-1/2 h-[30vw] bg-[#2E5E2D]"></div>
               <div className="w-1/2 md:w-[32%]">
                 <div>{this.rating(item.rate)}</div>
-                <p className="text-xl mt-5">
-                  <span>"</span>I used to spend hours writing creative copy, but
+                <q className="text-xl mt-5">
+                  I used to spend hours writing creative copy, but
                   now all I do is tell Rytr what I need and it writes everything
                   for me. It's the ultimate AI content writer, and a must-have
-                  tool for bloggers, marketers, & entrepreneurs.<span>"</span>
-                </p>
+                  tool for bloggers, marketers, & entrepreneurs.
+                </q>
                 <p className="font-bold text-3xl mt-5">{item.name}</p>
                 <p className="uppercase text-xl mt-4">{item.country}</p>
               </div>

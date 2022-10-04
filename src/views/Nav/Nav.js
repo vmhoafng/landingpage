@@ -10,8 +10,8 @@ export default class Nav extends Component {
     return (
       <div className="flex justify-center bg-gradient-to-b from-[#2E5E2D] to-[#023501]">
         <div className="flex h-20 lg:h-[149px] justify-between items-center w-[85%]">
-          <img alt="logo" src={logo} className="w-1/2 lg:w-auto" />
-          <ul className="hidden md:flex gap-10 text-3xl font-semibold text-white">
+          <img alt="logo" src={logo} className="w-1/2 md:w-1/3 lg:w-auto" />
+          <ul className="hidden lg:flex gap-10 text-3xl font-semibold text-white">
             <li className="cursor-pointer">Home</li>
             <li className="cursor-pointer flex items-center justify-between ">
               Shop

@@ -28,7 +28,7 @@ export default class Instagram extends Component {
   ];
   render() {
     return (
-      <div className="flex flex-wrap items-center justify-center md:justify-between gap-4">
+      <div className="flex flex-wrap items-center justify-center lg:justify-between gap-4">
         {this.InsImg.map((item, index) => {
           return (
             <img
