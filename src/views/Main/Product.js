@@ -1,60 +1,11 @@
 import React, { Component } from "react";
 import star from "../../assets/img/totalRatingStar.svg";
-import prod1 from "../../assets/img/prod1.png";
-import prod2 from "../../assets/img/prod2.png";
-import prod3 from "../../assets/img/prod3.png";
-import prod4 from "../../assets/img/prod4.png";
-import prod5 from "../../assets/img/prod5.png";
-import prod6 from "../../assets/img/prod6.png";
+
 export default class Product extends Component {
-  prods = [
-    {
-      name: "",
-      currentPrice: 1500,
-      price: 2000,
-      sale: 500,
-      img: prod1,
-    },
-    {
-      name: "",
-      currentPrice: 1500,
-      price: 2000,
-      sale: 500,
-      img: prod2,
-    },
-    {
-      name: "",
-      currentPrice: 1500,
-      price: 2000,
-      sale: 500,
-      img: prod3,
-    },
-    {
-      name: "",
-      currentPrice: 1500,
-      price: 2000,
-      sale: 500,
-      img: prod4,
-    },
-    {
-      name: "",
-      currentPrice: 1500,
-      price: 2000,
-      sale: 500,
-      img: prod5,
-    },
-    {
-      name: "",
-      currentPrice: 1500,
-      price: 2000,
-      sale: 500,
-      img: prod6,
-    },
-  ];
   render() {
     return (
-      <>
-        {this.prods.map((prod, index) => {
+      <div className="flex items-center justify-center flex-wrap w-11/12 lg:w-3/4 gap-[14px] rounded-[20px]">
+        {this.props.prods.map((prod, index) => {
           if (index < 3) {
             return (
               <div
@@ -121,7 +72,7 @@ export default class Product extends Component {
             );
           }
         })}
-      </>
+      </div>
     );
   }
 }

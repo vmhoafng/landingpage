@@ -1,40 +1,16 @@
 import React, { Component } from "react";
 import star from "../../assets/img/userRatingStar.svg";
-import user from "../../assets/img/user.png";
 export default class TopReview extends Component {
-  userReview = [
-    {
-      id: 1,
-      name: "John Lennon",
-      rate: 4,
-      country: "United States",
-      img: user,
-    },
-    {
-      id: 2,
-      name: "Paul McCarthy",
-      rate: 2,
-      country: "United States",
-      img: user,
-    },
-    {
-      id: 3,
-      name: "Ringo Star",
-      rate: 3,
-      country: "United States",
-      img: user,
-    },
-  ];
-  rating(userRate) {
-    console.log(userRate);
-    for (let i = 0; i < userRate; i++) {
-      <img src={star} alt="" className="inline" />;
-    }
+  // Fnt return star based on the rating
+  rating(userRate, index) {
+    return Array.from({ length: userRate }, () => (
+      <img key={index++} src={star} alt="" className="inline" />
+    ));
   }
   render() {
     return (
-      <>
-        {this.userReview.map((item, index) => {
+      <section className="mt-6 w-11/12 lg:w-3/4 m-auto">
+        {this.props.rates.map((item, index) => {
           return index === 0 || !(index % 2) ? (
             <div
               key={index}
@@ -46,17 +22,17 @@ export default class TopReview extends Component {
               />
               <div className="w-1/2 h-[30vw] bg-[#2E5E2D]"></div>
               <div className="w-1/2 md:w-[32%]">
-                <div>{this.rating(item.rate)}</div>
+                <div>{this.rating(item.rate, index)}</div>
                 <q className="text-xl mt-5">
-                  I used to spend hours writing creative copy, but
-                  now all I do is tell Rytr what I need and it writes everything
-                  for me. It's the ultimate AI content writer, and a must-have
-                  tool for bloggers, marketers, & entrepreneurs.
+                  I used to spend hours writing creative copy, but now all I do
+                  is tell Rytr what I need and it writes everything for me. It's
+                  the ultimate AI content writer, and a must-have tool for
+                  bloggers, marketers, & entrepreneurs.
                 </q>
                 <p className="font-bold text-3xl mt-5">{item.name}</p>
                 <p className="uppercase text-xl mt-4">{item.country}</p>
               </div>
-            </div> 
+            </div>
           ) : (
             <div
               key={index}
@@ -68,7 +44,7 @@ export default class TopReview extends Component {
               />
               <div className="w-1/2 h-[30vw] bg-[#2E5E2D]"></div>
               <div className="w-1/2 md:w-[32%]">
-                <div>{this.rating(item.rate)}</div>
+                <div>{this.rating(item.rate, index)}</div>
                 <p className="text-xl mt-5">
                   <span>"</span>I used to spend hours writing creative copy, but
                   now all I do is tell Rytr what I need and it writes everything
@@ -81,7 +57,7 @@ export default class TopReview extends Component {
             </div>
           );
         })}
-      </>
+      </section>
     );
   }
 }

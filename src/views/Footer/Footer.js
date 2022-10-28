@@ -18,75 +18,75 @@ export default class Footer extends Component {
           <img alt="logo" src={logo} />
           <div className="lg:flex hidden items-start justify-between">
             <div className="w-1/5">
-              <p className="text-[25px] font-medium uppercase text-white mb-14">
+              <a href="#!" className="block text-[25px] font-medium uppercase text-white mb-14">
                 Company
-              </p>
+              </a>
               <div>
-                <p className="text-[22px] text-white capitalize">About</p>
-                <p className="text-[22px] text-white capitalize">Careers</p>
-                <p className="text-[22px] text-white capitalize">Press</p>
-                <p className="text-[22px] text-white capitalize">
+                <a href="#!" className="block text-[22px] text-white capitalize">About</a>
+                <a href="#!" className="block text-[22px] text-white capitalize">Careers</a>
+                <a href="#!" className="block text-[22px] text-white capitalize">Press</a>
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   Corporate Orders
-                </p>
-                <p className="text-[22px] text-white capitalize">
+                </a>
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   Refer a Friend
-                </p>
-                <p className="text-[22px] text-white capitalize">
+                </a>
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   Our Guarantee
-                </p>
+                </a>
               </div>
             </div>
             <div className="w-1/5">
-              <p className="text-[25px] font-medium uppercase text-white mb-14">
+              <a href="#!" className="block text-[25px] font-medium uppercase text-white mb-14">
                 support
-              </p>
+              </a>
               <div>
-                <p className="text-[22px] text-white capitalize">Help + FAQs</p>
-                <p className="text-[22px] text-white capitalize">
+                <a href="#!" className="block text-[22px] text-white capitalize">Help + FAQs</a>
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   track your orders
-                </p>
-                <p className="text-[22px] text-white capitalize">Shipping</p>
-                <p className="text-[22px] text-white capitalize">Returns</p>
-                <p className="text-[22px] text-white capitalize">
+                </a>
+                <a href="#!" className="block text-[22px] text-white capitalize">Shipping</a>
+                <a href="#!" className="block text-[22px] text-white capitalize">Returns</a>
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   Contact Support
-                </p>
+                </a>
               </div>
             </div>
             <div className="w-1/5">
-              <p className="text-[25px] font-medium uppercase text-white mb-14">
+              <a href="#!" className="block text-[25px] font-medium uppercase text-white mb-14">
                 plant questions
-              </p>
+              </a>
               <div>
-                <p className="text-[22px] text-white capitalize">
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   {" "}
                   Plant care tips
-                </p>
-                <p className="text-[22px] text-white capitalize">
+                </a>
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   {" "}
                   plant life blog
-                </p>
-                <p className="text-[22px] text-white capitalize">
+                </a>
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   {" "}
                   Plantgallery app
-                </p>
-                <p className="text-[22px] text-white capitalize">
+                </a>
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   {" "}
                   meet our team
-                </p>
-                <p className="text-[22px] text-white capitalize">
+                </a>
+                <a href="#!" className="block text-[22px] text-white capitalize">
                   {" "}
                   contact team
-                </p>
+                </a>
               </div>
             </div>
             <div className="w-1/5">
-              <p className="text-[25px] font-medium uppercase text-white mb-14">
+              <a href="#!" className="block text-[25px] font-medium uppercase text-white mb-14">
                 stay in touch
-              </p>
-              <p className="text-[22px] text-white capitalize">
+              </a>
+              <a href="#!" className="block text-[22px] text-white capitalize">
                 Stay in touch with special offers, plant-parenting tips, and so
                 much more.....
-              </p>
+              </a>
               <div className="relative mt-9">
                 <form>
                   <input
@@ -120,12 +120,12 @@ export default class Footer extends Component {
           </div>
           <hr className="bg-white/40 border-none h-[2px] w-full hidden md:block" />
           <div className="flex flex-col lg:flex-row items-center justify-between text-white text-[22px] w-full">
-            <p>@2022 Plantgallery</p>
+            <a href="#!">@2022 Plantblock gallery</a>
             <div className="flex capitalize gap-5">
-              <p>Terms of Use</p>
-              <p>Copyrights & trademark</p>
-              <p>policy</p>
-              <p>Sitemap</p>
+              <a href="#!">Terms of Usblock e</a>
+              <a href="#!">Copyrights block & trademark</a>
+              <a href="#!">policy</a>
+block               <a href="#!">Sitemap</a>block 
             </div>
           </div>
         </div>
