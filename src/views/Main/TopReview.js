@@ -15,9 +15,8 @@ export default class TopReview extends Component {
             <div
               key={index}
               className={
-                index === 0 || !(index % 2)
-                  ? "relative flex items-end justify-end pb-[17rem] gap-10"
-                  : "relative flex items-end justify-end flex-row-reverse pb-[17rem] gap-10"
+                "relative flex items-end justify-end pb-[17rem] gap-10" +
+                (index % 2 ? " flex-row-reverse" : "")
               }>
               <img
                 alt=""

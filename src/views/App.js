@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Nav from "./Nav/Nav";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
@@ -9,7 +11,7 @@ import prod4 from "../assets/img/prod4.png";
 import prod5 from "../assets/img/prod5.png";
 import prod6 from "../assets/img/prod6.png";
 
-import user from "../assets/img/user.png";
+import userImg from "../assets/img/user.png";
 
 export default function App() {
   const prods = [
@@ -56,13 +58,13 @@ export default function App() {
       img: prod6,
     },
   ];
-  const userReview = [
+  const user = [
     {
       id: 1,
       name: "John Lennon",
       rate: 4,
       country: "United States",
-      img: user,
+      img: userImg,
       comment: null,
     },
     {
@@ -70,7 +72,7 @@ export default function App() {
       name: "Paul McCarthy",
       rate: 5,
       country: "United States",
-      img: user,
+      img: userImg,
       comment: null,
     },
     {
@@ -78,20 +80,24 @@ export default function App() {
       name: "Ringo Star",
       rate: 5,
       country: "United States",
-      img: user,
+      img: userImg,
       comment: null,
     },
   ];
-  const getComments = async () => {
-    let res = await fetch("https://jsonplaceholder.typicode.com/comments");
-    let data = await res.json();
-    return data;
-  };
-  getComments().then((data) => {
-    for (let i = 0; i < userReview.length; i++) {
-      userReview[i].comment = data[i].body;
-    }
-  });
+  const [userReview, setUserReview] = useState([...user]);
+  useEffect(() => {
+    const getComments = async () => {
+      let res = await fetch("https://jsonplaceholder.typicode.com/comments");
+      let data = await res.json();
+      return data;
+    };
+    getComments().then((data) => {
+      for (let i = 0; i < user.length; i++) {
+        user[i].comment = data[i].body;
+      }
+      setUserReview(user);
+    });
+  }, []);
   return (
     <div>
       <Nav />

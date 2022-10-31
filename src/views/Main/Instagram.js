@@ -44,14 +44,14 @@ export default class Instagram extends Component {
         <button className="bg-gradient-to-b from-[#5EEE6D] to-[#2E5E2D] text-white text-[25px] py-[13.75px] px-6 rounded-full">
           @plantgallery
         </button>
-        <div className="flex flex-wrap items-center justify-center lg:justify-between gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-4">
           {this.InsImg.map((item, index) => {
             return (
               <img
                 key={index}
                 alt=""
                 src={item.img}
-                className="w-10/12 lg:w-[32%] "
+                className="w-10/12 md:w-5/12 lg:w-[30%] "
               />
             );
           })}

@@ -10,9 +10,11 @@ export default class Product extends Component {
             <div
               key={index}
               className={
-                index < 3
-                  ? "w-10/12 md:w-[32%] flex flex-col items-center justify-center gap-4"
-                  : "w-10/12 md:w-[32%] flex flex-col items-center justify-center mt-20 gap-4"
+                "w-10/12 md:w-[32%] flex flex-col items-center justify-center gap-4" +
+                  index >=
+                3
+                  ? " mt-20"
+                  : ""
               }>
               <div className="relative w-full">
                 <img alt="" src={prod.img} className="w-full" />

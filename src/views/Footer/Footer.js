@@ -18,69 +18,121 @@ export default class Footer extends Component {
           <img alt="logo" src={logo} />
           <div className="lg:flex hidden items-start justify-between">
             <div className="w-1/5">
-              <a href="#!" className="block text-[25px] font-medium uppercase text-white mb-14">
+              <a
+                href="#!"
+                className="block text-[25px] font-medium uppercase text-white mb-14">
                 Company
               </a>
               <div>
-                <a href="#!" className="block text-[22px] text-white capitalize">About</a>
-                <a href="#!" className="block text-[22px] text-white capitalize">Careers</a>
-                <a href="#!" className="block text-[22px] text-white capitalize">Press</a>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
+                  About
+                </a>
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
+                  Careers
+                </a>
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
+                  Press
+                </a>
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   Corporate Orders
                 </a>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   Refer a Friend
                 </a>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   Our Guarantee
                 </a>
               </div>
             </div>
             <div className="w-1/5">
-              <a href="#!" className="block text-[25px] font-medium uppercase text-white mb-14">
+              <a
+                href="#!"
+                className="block text-[25px] font-medium uppercase text-white mb-14">
                 support
               </a>
               <div>
-                <a href="#!" className="block text-[22px] text-white capitalize">Help + FAQs</a>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
+                  Help + FAQs
+                </a>
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   track your orders
                 </a>
-                <a href="#!" className="block text-[22px] text-white capitalize">Shipping</a>
-                <a href="#!" className="block text-[22px] text-white capitalize">Returns</a>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
+                  Shipping
+                </a>
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
+                  Returns
+                </a>
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   Contact Support
                 </a>
               </div>
             </div>
             <div className="w-1/5">
-              <a href="#!" className="block text-[25px] font-medium uppercase text-white mb-14">
+              <a
+                href="#!"
+                className="block text-[25px] font-medium uppercase text-white mb-14">
                 plant questions
               </a>
               <div>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   {" "}
                   Plant care tips
                 </a>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   {" "}
                   plant life blog
                 </a>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   {" "}
                   Plantgallery app
                 </a>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   {" "}
                   meet our team
                 </a>
-                <a href="#!" className="block text-[22px] text-white capitalize">
+                <a
+                  href="#!"
+                  className="block text-[22px] text-white capitalize">
                   {" "}
                   contact team
                 </a>
               </div>
             </div>
             <div className="w-1/5">
-              <a href="#!" className="block text-[25px] font-medium uppercase text-white mb-14">
+              <a
+                href="#!"
+                className="block text-[25px] font-medium uppercase text-white mb-14">
                 stay in touch
               </a>
               <a href="#!" className="block text-[22px] text-white capitalize">
@@ -125,7 +177,7 @@ export default class Footer extends Component {
               <a href="#!">Terms of Usblock e</a>
               <a href="#!">Copyrights block & trademark</a>
               <a href="#!">policy</a>
-block               <a href="#!">Sitemap</a>block 
+              block <a href="#!">Sitemap</a>block
             </div>
           </div>
         </div>

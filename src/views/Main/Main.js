@@ -121,15 +121,18 @@ export default class Main extends Component {
         <section className="mt-28">
           <div className="bg-bg-pattern-2 h-[458px] bg-cover bg-no-repeat flex items-center justify-center">
             <div className="w-11/12 lg:w-3/4 flex flex-col gap-8">
-              <p className="text-[#2E5E2D] text-[50px]">
+              <label htmlFor="form" className="text-[#2E5E2D] text-[50px]">
                 Sign up to our newsletter
-              </p>
+              </label>
               <p className="text-[#666866] text-[20px]">
                 Stay up to date on the latest news with our carefully curated
                 newsletters.
               </p>
               <form className="flex h-20 w-4/5">
-                <input className="w-4/5 rounded-l-[20px] outline-none px-10 h-full" />
+                <input
+                  id="form"
+                  className="w-4/5 rounded-l-[20px] outline-none px-10 h-full"
+                />
                 <button className="h-full rounded-r-[20px] text-[20px] bg-[#2E5E2D] uppercase px-12 text-white">
                   Submit
                 </button>
