@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Nav from "./Nav/Nav";
 import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
-
+import axios from "axios";
 import prod1 from "../assets/img/prod1.png";
 import prod2 from "../assets/img/prod2.png";
 import prod3 from "../assets/img/prod3.png";
@@ -85,31 +85,23 @@ export default function App() {
     },
   ];
   const [userReview, setUserReview] = useState([...user]);
+
   useEffect(() => {
-    const getComments = async () => {
-      let res = await fetch("https://jsonplaceholder.typicode.com/comments");
-      let data = await res.json();
-      return data;
-    };
-    const getUser = async () => {
-      let res = await fetch("https://jsonplaceholder.typicode.com/users");
-      let data = await res.json();
-      return data;
-    };
-    getComments().then((data) => {
+    // getComments
+    axios.get("https://jsonplaceholder.typicode.com/comments").then((res) => {
       for (let i = 0; i < user.length; i++) {
-        user[i].comment = data[i].body;
+        user[i].comment = res.data[i].body;
         setUserReview([...user]);
       }
     });
-    getUser().then((data) => {
+    //getUsersName
+    axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
       for (let i = 0; i < user.length; i++) {
-        user[i].name = data[i].name;
+        user[i].name = res.data[i].name;
         setUserReview([...user]);
       }
     });
   }, []);
-  console.log(userReview);
   return (
     <div className="overflow-hidden">
       <Nav />
