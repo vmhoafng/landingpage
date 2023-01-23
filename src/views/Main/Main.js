@@ -9,9 +9,11 @@ import Instagram from "./Instagram";
 import TopReview from "./TopReview";
 export default class Main extends Component {
   render() {
+    const button =
+      "border-2 border-[#5EEE6D] lg:px-[52px] lg:py-[23px] lg:text-3xl px-6 py-4 rounded-full uppercase";
     return (
       <div>
-        <section className="flex items-center justify-center bg-gradient-to-b from-[#ECECEC] via-[#ECECEC] to-[#AEAEAE] py-44">
+        <section className="flex-center bg-gradient-to-b from-[#ECECEC] via-[#ECECEC] to-[#AEAEAE] py-44">
           <div className="flex items-center justify-start w-11/12 lg:w-3/4">
             <div className="flex flex-col gap-10 w-11/12 lg:w-3/4 z-20">
               <h1 className="font-bold text-[90px] leading-[6rem]">
@@ -82,16 +84,12 @@ export default class Main extends Component {
             <h2 className="font-bold text-6xl text-center capitalize z-10">
               our <span className="text-[#2E5E2D]">best seller</span>
             </h2>
-            <div className="flex items-center justify-center gap-[29px] my-20 z-10">
-              <button className="border-[#5EEE6D] filter-active lg:px-[52px] lg:py-[23px] lg:text-3xl rounded-full uppercase">
+            <div className="flex-center gap-[29px] my-20 z-10">
+              <button className={`filter-active ${button}`}>
                 New arrivals
               </button>{" "}
-              <button className="border-2 border-[#5EEE6D] lg:px-[52px] lg:py-[23px] lg:text-3xl rounded-full uppercase">
-                best seller
-              </button>{" "}
-              <button className="border-2 border-[#5EEE6D] lg:px-[52px] lg:py-[23px] lg:text-3xl rounded-full uppercase">
-                top rated
-              </button>
+              <button className={`${button}`}>best seller</button>{" "}
+              <button className={`${button}`}>top rated</button>
             </div>
             <Product prods={this.props.prods} />
           </div>
@@ -119,7 +117,7 @@ export default class Main extends Component {
         <TopReview rates={this.props.rates} />
         <Instagram />
         <section className="mt-28">
-          <div className="bg-bg-pattern-2 h-[458px] bg-cover bg-no-repeat flex items-center justify-center">
+          <div className="bg-bg-pattern-2 h-[458px] bg-cover bg-no-repeat flex-center">
             <div className="w-11/12 lg:w-3/4 flex flex-col gap-8">
               <label htmlFor="form" className="text-[#2E5E2D] text-[50px]">
                 Sign up to our newsletter

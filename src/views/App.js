@@ -61,7 +61,7 @@ export default function App() {
   const user = [
     {
       id: 1,
-      name: "John Lennon",
+      name: null,
       rate: 4,
       country: "United States",
       img: userImg,
@@ -69,7 +69,7 @@ export default function App() {
     },
     {
       id: 2,
-      name: "Paul McCarthy",
+      name: null,
       rate: 5,
       country: "United States",
       img: userImg,
@@ -77,7 +77,7 @@ export default function App() {
     },
     {
       id: 3,
-      name: "Ringo Star",
+      name: null,
       rate: 5,
       country: "United States",
       img: userImg,
@@ -91,15 +91,27 @@ export default function App() {
       let data = await res.json();
       return data;
     };
+    const getUser = async () => {
+      let res = await fetch("https://jsonplaceholder.typicode.com/users");
+      let data = await res.json();
+      return data;
+    };
     getComments().then((data) => {
       for (let i = 0; i < user.length; i++) {
         user[i].comment = data[i].body;
+        setUserReview([...user]);
       }
-      setUserReview(user);
+    });
+    getUser().then((data) => {
+      for (let i = 0; i < user.length; i++) {
+        user[i].name = data[i].name;
+        setUserReview([...user]);
+      }
     });
   }, []);
+  console.log(userReview);
   return (
-    <div>
+    <div className="overflow-hidden">
       <Nav />
       <Main prods={prods} rates={userReview} />
       <Footer />

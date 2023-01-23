@@ -12,6 +12,8 @@ import visa from "../../assets/img/visa.png";
 import Americanxpress from "../../assets/img/Americanxpress.png";
 export default class Footer extends Component {
   render() {
+    const linkTag = "block text-[22px] text-white capitalize";
+    const socialMediaIcon = "p-2 rounded-[100%] border-2 border-white/50";
     return (
       <div className="py-14 bg-gradient-to-b from-[#2E5E2D] to-[#013900]">
         <div className="w-[85%] flex flex-col justify-center items-start m-auto gap-[68px]">
@@ -24,34 +26,22 @@ export default class Footer extends Component {
                 Company
               </a>
               <div>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   About
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   Careers
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   Press
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   Corporate Orders
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   Refer a Friend
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   Our Guarantee
                 </a>
               </div>
@@ -63,29 +53,19 @@ export default class Footer extends Component {
                 support
               </a>
               <div>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   Help + FAQs
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   track your orders
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   Shipping
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   Returns
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   Contact Support
                 </a>
               </div>
@@ -97,33 +77,23 @@ export default class Footer extends Component {
                 plant questions
               </a>
               <div>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   {" "}
                   Plant care tips
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   {" "}
                   plant life blog
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   {" "}
                   Plantgallery app
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   {" "}
                   meet our team
                 </a>
-                <a
-                  href="#!"
-                  className="block text-[22px] text-white capitalize">
+                <a href="#!" className={`${linkTag}`}>
                   {" "}
                   contact team
                 </a>
@@ -135,7 +105,7 @@ export default class Footer extends Component {
                 className="block text-[25px] font-medium uppercase text-white mb-14">
                 stay in touch
               </a>
-              <a href="#!" className="block text-[22px] text-white capitalize">
+              <a href="#!" className={`${linkTag}`}>
                 Stay in touch with special offers, plant-parenting tips, and so
                 much more.....
               </a>
@@ -150,13 +120,13 @@ export default class Footer extends Component {
                 <img alt="" src={mail} className="absolute top-1 right-0" />
               </div>
               <div className="flex gap-4 mt-8">
-                <div className="p-2 rounded-[100%] border-2 border-white/50">
+                <div className={`${socialMediaIcon}`}>
                   <img alt="" src={facebook} />
                 </div>
-                <div className="p-2 rounded-[100%] border-2 border-white/50">
+                <div className={`${socialMediaIcon}`}>
                   <img alt="" src={instagram} />
                 </div>
-                <div className="p-2 rounded-[100%] border-2 border-white/50">
+                <div className={`${socialMediaIcon}`}>
                   <img alt="" src={twitter} />
                 </div>
               </div>

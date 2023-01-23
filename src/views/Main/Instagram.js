@@ -29,7 +29,7 @@ export default class Instagram extends Component {
   ];
   render() {
     return (
-      <section className="flex flex-col justify-center items-center w-11/12 lg:w-3/4 m-auto bg-black gap-[70px]">
+      <section className="flex-col flex-center w-11/12 lg:w-3/4 m-auto bg-black gap-[70px]">
         <div className="relative mt-20">
           <div className="absolute bg-[#DEE1DD] p-3 rounded-[100%] left-1/2 -translate-x-1/2 -translate-y-full lg:transform-none  lg:left-16 ">
             <img alt="" src={instagram} className="" />
@@ -44,7 +44,7 @@ export default class Instagram extends Component {
         <button className="bg-gradient-to-b from-[#5EEE6D] to-[#2E5E2D] text-white text-[25px] py-[13.75px] px-6 rounded-full">
           @plantgallery
         </button>
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div className="flex-wrap flex-center gap-4">
           {this.InsImg.map((item, index) => {
             return (
               <img
