@@ -91,15 +91,15 @@ export default function App() {
     axios.get("https://jsonplaceholder.typicode.com/comments").then((res) => {
       for (let i = 0; i < user.length; i++) {
         user[i].comment = res.data[i].body;
-        setUserReview([...user]);
       }
+      setUserReview([...user]);
     });
     //getUsersName
     axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
       for (let i = 0; i < user.length; i++) {
         user[i].name = res.data[i].name;
-        setUserReview([...user]);
       }
+      setUserReview([...user]);
     });
   }, []);
   return (
